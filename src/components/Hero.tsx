@@ -26,11 +26,11 @@ const Hero = () => {
             <div className="absolute -z-10 inset-0 bg-gradient-to-tr from-primary/10 to-accent/10 blur-3xl" />
             <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
               <img
-                src="https://placekitten.com/800/500"
+                src="https://cdn.poehali.dev/files/42362eba-34c0-4fa3-b397-8df50c3b37d3.jpeg"
                 alt="Котик учится с приложением"
                 width={800}
                 height={500}
-                className="rounded-lg border shadow-xl mx-auto"
+                className="rounded-lg border shadow-xl mx-auto object-contain bg-white"
               />
               <div className="absolute -bottom-6 right-0 md:right-[15%] lg:right-[25%] md:relative">
                 <img
