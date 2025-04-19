@@ -11,16 +11,26 @@ interface FeatureProps {
   icon: React.ReactNode;
   title: string;
   description: string;
+  image?: string;
 }
 
-const Feature = ({ icon, title, description }: FeatureProps) => {
+const Feature = ({ icon, title, description, image }: FeatureProps) => {
   return (
-    <div className="flex flex-col items-center gap-2 text-center p-6 bg-card rounded-lg border shadow-sm hover:shadow-md transition-shadow">
+    <div className="flex flex-col items-center gap-3 text-center p-6 bg-card rounded-lg border shadow-sm hover:shadow-md transition-shadow">
       <div className="p-3 rounded-full bg-primary/10 text-primary">
         {icon}
       </div>
       <h3 className="text-xl font-semibold">{title}</h3>
       <p className="text-muted-foreground">{description}</p>
+      {image && (
+        <div className="mt-3 w-full">
+          <img
+            src={image}
+            alt={`Котик демонстрирует: ${title}`}
+            className="rounded-md w-full h-36 object-cover"
+          />
+        </div>
+      )}
     </div>
   );
 };
@@ -30,32 +40,38 @@ const Features = () => {
     {
       icon: <FileText className="h-6 w-6" />,
       title: "Обмен конспектами",
-      description: "Делитесь заметками, конспектами и учебными материалами с одноклассниками или сокурсниками"
+      description: "Делитесь заметками, конспектами и учебными материалами с одноклассниками или сокурсниками",
+      image: "https://placekitten.com/400/300"
     },
     {
       icon: <Search className="h-6 w-6" />,
       title: "Умный поиск",
-      description: "Быстро находите нужные материалы по предметам, темам или авторам"
+      description: "Быстро находите нужные материалы по предметам, темам или авторам",
+      image: "https://placekitten.com/401/300"
     },
     {
       icon: <Users className="h-6 w-6" />,
       title: "Совместная работа",
-      description: "Создавайте группы по предметам и работайте над материалами вместе"
+      description: "Создавайте группы по предметам и работайте над материалами вместе",
+      image: "https://placekitten.com/402/300"
     },
     {
       icon: <Bookmark className="h-6 w-6" />,
       title: "Сохранение на устройстве",
-      description: "Сохраняйте нужные материалы для доступа офлайн в любое время"
+      description: "Сохраняйте нужные материалы для доступа офлайн в любое время",
+      image: "https://placekitten.com/403/300"
     },
     {
       icon: <Share2 className="h-6 w-6" />,
       title: "Простой обмен",
-      description: "Обменивайтесь материалами в один клик с помощью генерации QR-кода"
+      description: "Обменивайтесь материалами в один клик с помощью генерации QR-кода",
+      image: "https://placekitten.com/404/300"
     },
     {
       icon: <Shield className="h-6 w-6" />,
       title: "Безопасность",
-      description: "Ваши материалы надежно защищены и доступны только тем, кому вы их разрешили"
+      description: "Ваши материалы надежно защищены и доступны только тем, кому вы их разрешили",
+      image: "https://placekitten.com/405/300"
     },
   ];
 
@@ -79,6 +95,7 @@ const Features = () => {
               icon={feature.icon}
               title={feature.title}
               description={feature.description}
+              image={feature.image}
             />
           ))}
         </div>

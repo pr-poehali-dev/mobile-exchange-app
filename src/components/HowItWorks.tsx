@@ -70,8 +70,8 @@ const HowItWorks = () => {
             <div className="absolute -z-10 inset-0 bg-gradient-to-br from-accent/20 to-primary/20 blur-2xl" />
             <div className="rounded-xl border bg-card p-2 shadow-lg">
               <img
-                src="/placeholder.svg"
-                alt="Процесс работы с приложением"
+                src="https://placekitten.com/500/700"
+                alt="Котик изучает приложение"
                 width={500}
                 height={700}
                 className="rounded-lg object-cover w-auto"

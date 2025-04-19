@@ -41,6 +41,7 @@ const Testimonials = () => {
       author: {
         name: "Анна Смирнова",
         role: "Ученица 11 класса",
+        avatar: "https://placekitten.com/100/100",
       },
     },
     {
@@ -48,6 +49,7 @@ const Testimonials = () => {
       author: {
         name: "Дмитрий Петров",
         role: "Студент университета",
+        avatar: "https://placekitten.com/101/101",
       },
     },
     {
@@ -55,6 +57,7 @@ const Testimonials = () => {
       author: {
         name: "Елена Иванова",
         role: "Учитель математики",
+        avatar: "https://placekitten.com/102/102",
       },
     },
   ];
@@ -80,6 +83,15 @@ const Testimonials = () => {
               author={testimonial.author} 
             />
           ))}
+        </div>
+        <div className="flex justify-center mt-12">
+          <img 
+            src="https://placekitten.com/700/300" 
+            alt="Счастливые котики-пользователи" 
+            className="rounded-lg shadow-lg"
+            width={700}
+            height={300}
+          />
         </div>
       </div>
     </section>

@@ -24,13 +24,24 @@ const Hero = () => {
           </div>
           <div className="mt-8 md:mt-12 relative">
             <div className="absolute -z-10 inset-0 bg-gradient-to-tr from-primary/10 to-accent/10 blur-3xl" />
-            <img
-              src="/placeholder.svg"
-              alt="Мобильное приложение УчиОбмен"
-              width={800}
-              height={500}
-              className="rounded-lg border shadow-xl mx-auto"
-            />
+            <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
+              <img
+                src="https://placekitten.com/800/500"
+                alt="Котик учится с приложением"
+                width={800}
+                height={500}
+                className="rounded-lg border shadow-xl mx-auto"
+              />
+              <div className="absolute -bottom-6 right-0 md:right-[15%] lg:right-[25%] md:relative">
+                <img
+                  src="https://placekitten.com/300/300"
+                  alt="Котик с книгой"
+                  width={180}
+                  height={180}
+                  className="rounded-full border-4 border-white shadow-lg"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

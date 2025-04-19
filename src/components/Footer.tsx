@@ -14,6 +14,15 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground">
               Мобильное приложение для обмена учебными материалами и заметками среди учеников
             </p>
+            <div className="pt-2">
+              <img 
+                src="https://placekitten.com/150/90" 
+                alt="Котик с книгами"
+                className="rounded-md"
+                width={150}
+                height={90}
+              />
+            </div>
           </div>
           <div className="space-y-4">
             <h4 className="text-sm font-medium uppercase tracking-wider text-muted-foreground">Продукт</h4>
@@ -40,6 +49,31 @@ const Footer = () => {
               <li><Link to="/privacy" className="text-sm hover:text-accent transition-colors">Политика конфиденциальности</Link></li>
               <li><Link to="/cookies" className="text-sm hover:text-accent transition-colors">Политика использования файлов cookie</Link></li>
             </ul>
+          </div>
+        </div>
+        <div className="flex justify-center my-8">
+          <div className="flex gap-4">
+            <img 
+              src="https://placekitten.com/95/95" 
+              alt="Котик с телефоном" 
+              className="rounded-lg" 
+              width={95} 
+              height={95} 
+            />
+            <img 
+              src="https://placekitten.com/96/96" 
+              alt="Котик с ноутбуком" 
+              className="rounded-lg" 
+              width={95} 
+              height={95} 
+            />
+            <img 
+              src="https://placekitten.com/97/97" 
+              alt="Котик с планшетом" 
+              className="rounded-lg" 
+              width={95} 
+              height={95} 
+            />
           </div>
         </div>
         <div className="mt-12 border-t pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
