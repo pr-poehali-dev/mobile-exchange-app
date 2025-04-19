@@ -34,11 +34,11 @@ const Hero = () => {
               />
               <div className="absolute -bottom-6 right-0 md:right-[15%] lg:right-[25%] md:relative">
                 <img
-                  src="https://placekitten.com/300/300"
+                  src="https://cdn.poehali.dev/files/94c63aa0-2ff5-4456-8266-f76d7270ea0b.jpeg"
                   alt="Котик с книгой"
                   width={180}
                   height={180}
-                  className="rounded-full border-4 border-white shadow-lg"
+                  className="rounded-full border-4 border-white shadow-lg object-cover"
                 />
               </div>
             </div>
